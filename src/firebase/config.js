@@ -3,17 +3,19 @@ import '@firebase/auth';
 import '@firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'YOUR_KEY_HERE_AIzaSyAOWH',
-  authDomain: 'your-auth-domain-b1234.firebaseapp.com',
-  databaseURL: 'https://your-database-name.firebaseio.com',
-  projectId: 'your-project-id-1234',
-  storageBucket: 'your-project-id-1234.appspot.com',
-  messagingSenderId: '12345-insert-yourse',
-  appId: 'insert yours: 1:1234:web:ee873bd1234c0deb7eba61ce',
+  apiKey: 'AIzaSyDqBj_yZb29IKZscxGbrRF48vrkt9_PqM0',
+  authDomain: 'voteyourcoin-00.firebaseapp.com',
+  databaseURL: 'https://voteyourcoin-00-default-rtdb.firebaseio.com/',
+  projectId: 'voteyourcoin-00',
+  storageBucket: 'voteyourcoin-00.appspot.com',
+  messagingSenderId: '508445584450',
+  appId: '1:508445584450:ios:db9f48e7aef20db36051db',
 };
 
 if (!firebase.apps.length) {
-    firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig);
+  firebase.firestore().enablePersistence()
+
 }
 
 export { firebase };
